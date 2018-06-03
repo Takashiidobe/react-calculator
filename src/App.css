@@ -1,0 +1,17 @@
+body {
+  font-size: 62.5%;
+}
+
+.App {
+  text-align: center;
+  font-size: 3em;
+}
+
+button {
+  height: 100px;
+  width: 120px;
+  font-size: 1em;
+  color: #ff0000;
+  filter: brightness(70%);
+}
+
