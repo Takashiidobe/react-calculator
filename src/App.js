@@ -48,7 +48,7 @@ class App extends Component {
     } else if (this.state.operator === '^') {
       this.setState({ total: this.state.runningNumber ** this.state.databank });
     } else if (this.state.operator === '√') {
-      this.setState({ total: Math.sqrt(this.state.runningNumber) });
+      this.setState({ total: Math.pow(this.state.runningNumber, 0.5) });
     } else if (this.state.operator === undefined) {
       this.setState({ 
         total: this.state.runningNumber,
@@ -166,7 +166,7 @@ class App extends Component {
       <button id="div" onClick={this.setDiv}>/</button>
       <button id="equ" onClick={this.setEqual}>=</button>
       <button id="pow" onClick={this.setPow}>^</button>
-      <button id="squ" onClick={this.setSqu}>√</button>
+      <button id="sqr" onClick={this.setSqu}>√</button>
       <button id="clear" onClick={this.clear}>CLEAR</button>
       </div>
       </div>
